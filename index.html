@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Ping coming soon page</title>
 
-  We are launching soon!
+    <script
+      src="https://kit.fontawesome.com/c2adb54c46.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <img src="./images/logo.svg" class="logo" alt="Ping's Logo" />
+        <h1>We are launching <span>soon!</span></h1>
+        <p>Subscribe and get notified</p>
+      </header>
 
-  Subscribe and get notified
+      <form action="#" class="notify">
+        <input
+          type="email"
+          class="form_input"
+          placeholder="Your email address"
+        />
+        <button class="form_btn">Notify me</button>
+      </form>
 
-  Notify Me
+      <div class="form_error">
+        <p  style="visibility: hidden;">please provide a valid email address</p>
+      </div>
 
-  &copy; Copyright Ping. All rights reserved.
+      <picture>
+        <img src="./images/illustration-dashboard.png" alt="" />
+      </picture>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+      <footer>
+        <div class="socials">
+          <a href="#" class="social_icon__links" aria-label="Ping's Facebook"><i aria-hidden="true" class="fab fa-facebook-f social-icon"></i></a>
+          <a href="#" class="social_icon__links" aria-label="Ping's Twitter"><i aria-hidden="true" class="fab fa-twitter social-icon"></i></a>
+          <a href="#" class="social_icon__links" aria-label="Ping's Instagram"><i aria-hidden="true" class="fab fa-instagram social-icon"></i></a>
+        </div>
+        <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+      </footer>
+    </main>
+  </body>
 </html>

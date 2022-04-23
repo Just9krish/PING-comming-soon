@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+*,
+::before,
+::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    color: var(--Very-Dark-Blue);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main {
+    margin: 2.25em;
+    margin-top: 5em;
+}
+
+button,
+i {
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    max-width: 650px;
+}
+
+.logo {
+    width: 56px;
+}
+
+@media (min-width: 600px) {
+    .log {
+        width: 90px;
+    }
+}
+
+header h1 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 1.375rem;
+    color: var(--Gray);
+}
+
+header p {
+    font-size: 0.75rem;
+}
+
+.notify {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+input,
+button {
+    padding: 1em 0 1em 0;
+    border-radius: 3.0125em;
+}
+
+input {
+    margin-bottom: 0.625em;
+    padding-left: 2em;
+    font-size: 0.75em;
+    border: 1px solid var(--Pale-Blue);
+}
+
+button {
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: none;
+    background-color: var(--Blue);
+    color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.error {
+    border: 1px solid var(--clr-light-red);
+    position: relative;
+}
+
+.form-error {
+    margin-top: 0.25em;
+    margin-left: 2em;
+    text-align: left;
+    font-style: italic;
+    color: var(--clr-light-red);
+}
+
+picture {
+    display: block;
+    margin-top: 4.5em;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.social_icon__links {
+    margin: 7.5em 0.3125em 0 0.3125em;
+    border-radius: 50%;
+    border: 1px solid rgba(76, 123, 243, 0.15);
+    color: var(--Blue);
+}
+
+.social_icon__links:hover {
+    background-color: var(--Blue);
+    color: #fff;
+}
+
+.social-icon {
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+}
+
+.copyright {
+    margin-top: 1.725em;
+    font-size: 0.625rem;
+    color: var(--Gray);
+}
+
+@media only screen and (min-width: 600px) {
+    .notify {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    input {
+        flex-basis: 420px;
+        margin-right: 0.5em;
+        margin-bottom: 0;
+    }
+
+    button {
+        flex-basis: 200px;
+        margin-left: 0.5em;
+    }
+}
