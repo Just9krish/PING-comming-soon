@@ -3,7 +3,7 @@ const input = document.querySelector(".form_input");
 const errorText = document.querySelector(".form_error");
 
 button.addEventListener("click", (e) => {
-    
+
   e.preventDefault();
 
   let inputText = document.querySelector(".form_input").value;
@@ -14,7 +14,7 @@ button.addEventListener("click", (e) => {
   if (inputText.match(mailRex)) {
     input.classList.remove("error");
     errorText.classList.add("hidden");
-    alert("You have subscribed");
+    alert("Great! You have subscribed.");
   } else if (inputText === "") {
     errorText.textContent = "Please enter your email first.";
     input.classList.add("error");
