@@ -55,12 +55,16 @@ img {
 header h1 {
     margin-top: 2em;
     margin-bottom: 1em;
-    font-size: 1.375rem;
+    font-size: 3rem;
     color: var(--Gray);
 }
 
-header p {
-    font-size: 0.75rem;
+header h1 span {
+    color: var(--Very-Dark-Blue);
+}
+
+p {
+    font-size: 1.25rem;
 }
 
 .notify {
@@ -68,6 +72,10 @@ header p {
     justify-content: center;
     flex-direction: column;
     margin-top: 2em;
+}
+
+.hidden {
+    display: none;
 }
 
 input,
@@ -79,12 +87,12 @@ button {
 input {
     margin-bottom: 0.625em;
     padding-left: 2em;
-    font-size: 0.75em;
+    font-size: 1em;
     border: 1px solid var(--Pale-Blue);
 }
 
 button {
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 600;
     border: none;
     background-color: var(--Blue);
@@ -97,16 +105,16 @@ button:hover {
 }
 
 .error {
-    border: 1px solid var(--clr-light-red);
+    border: 1px solid var(--Light-Red);
     position: relative;
 }
 
-.form-error {
+.form_error {
     margin-top: 0.25em;
     margin-left: 2em;
     text-align: left;
     font-style: italic;
-    color: var(--clr-light-red);
+    color: var(--Light-Red);
 }
 
 picture {
