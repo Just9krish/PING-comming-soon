@@ -12,7 +12,7 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Ping coming soon page</title>
 
     <script
@@ -29,17 +29,18 @@
       </header>
 
       <form action="#" class="notify">
-        <input
-          type="email"
-          class="form_input"
-          placeholder="Your email address"
-        />
+        <div class="notify__container">
+          <input
+            type="email"
+            class="form_input"
+            placeholder="Your email address"
+          />
+          <div class="error__container">
+            <small class="form_error hidden"></small>
+          </div>
+        </div>
         <button class="form_btn">Notify me</button>
       </form>
-
-      <div class="form_error hidden">
-        <small>please provide a valid email address</small>
-      </div>
 
       <picture>
         <img src="./images/illustration-dashboard.png" alt="" />
@@ -47,9 +48,15 @@
 
       <footer>
         <div class="socials">
-          <a href="#" class="social_icon__links" aria-label="Ping's Facebook"><i aria-hidden="true" class="fab fa-facebook-f social-icon"></i></a>
-          <a href="#" class="social_icon__links" aria-label="Ping's Twitter"><i aria-hidden="true" class="fab fa-twitter social-icon"></i></a>
-          <a href="#" class="social_icon__links" aria-label="Ping's Instagram"><i aria-hidden="true" class="fab fa-instagram social-icon"></i></a>
+          <a href="#" class="social_icon__links" aria-label="Ping's Facebook"
+            ><i aria-hidden="true" class="fab fa-facebook-f social-icon"></i
+          ></a>
+          <a href="#" class="social_icon__links" aria-label="Ping's Twitter"
+            ><i aria-hidden="true" class="fab fa-twitter social-icon"></i
+          ></a>
+          <a href="#" class="social_icon__links" aria-label="Ping's Instagram"
+            ><i aria-hidden="true" class="fab fa-instagram social-icon"></i
+          ></a>
         </div>
         <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
       </footer>
